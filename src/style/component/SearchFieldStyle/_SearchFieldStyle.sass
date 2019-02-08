@@ -1,0 +1,26 @@
+
+%font-params-search
+    font: 25px Verdana, sans-serif
+    color: #babec2
+    font-weight: bold
+
+
+.SearchField
+    width: 100%
+    padding: 45px 25px
+    background-color: #e9eef3
+
+    .search-icon
+        width: 27px
+        height: 25px
+        margin-right: 15px
+
+    .search-field
+        @extend %font-params-search
+        color: #7b7f83
+        padding: 5px
+        background-color: transparent
+        border: none
+
+        &::placeholder
+            @extend %font-params-search

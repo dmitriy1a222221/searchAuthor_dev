@@ -1,0 +1,76 @@
+
+$font-stack: 23px Verdana, sans-serif
+$primary-font-color: #1d3648
+$secondary-font-color: #b1b1b1
+
+%font-params
+    font: $font-stack
+    color: $primary-font-color
+    font-weight: bold
+
+
+
+.AuthorInfo
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px 35px 20px 10px
+
+.odd
+    background-color: #ffffff
+
+.pair
+    background-color: #f4f6f9
+    
+.main-author-inf
+    width: 48.004057%
+    display: flex
+    align-items: center
+
+    .order-num
+        //margin-right: 30px
+        margin-right: 8.9552238805970149253731343283582%
+
+    span
+        font: $font-stack
+        font-size: 14px
+        color: $secondary-font-color
+
+
+.avatar
+    width: 65px
+    height: 65px
+    background-color: aquamarine
+    border-radius: 50%
+    line-height: 65px
+    text-align: center
+    box-shadow: 0px 0px 27px -5px rgba(0,0,0,0.75)
+    margin-right: 14.5px
+
+    span
+        font: $font-stack
+        color: #ffffff
+        font-weight: bold
+
+.author-name
+    @extend %font-params
+
+.publication
+    font-size: 18px !important
+
+.medal
+    visibility: hidden
+    width: 37px
+    height: 70px
+    
+.medal-on
+    .medal
+        visibility: visible
+
+.page-view
+    @extend %font-params
+    align-self: self-end
+
+
+@import "media"
